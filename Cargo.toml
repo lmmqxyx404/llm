@@ -1,0 +1,13 @@
+[package]
+name = "llama"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio-stream = { version = "0.1.15" }
+ollama-rs = { version = "0.2.0", features = [
+  "stream",
+  "chat-history",
+  "function-calling",
+] }
+tokio = { version = "1", features = ["full"] }
